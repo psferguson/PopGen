@@ -10,11 +10,11 @@ from collections import OrderedDict as odict
 import numpy as np
 
 from popgen.modelBase import Model, Parameter
-from ugali.utils.shell import mkdir, get_ugali_dir, get_iso_dir
-from ugali.isochrone.model import Isochrone
-from ugali.isochrone.parsec import Marigo2017 as Padova
-from ugali.isochrone.parsec import defaults_27
-from ugali.utils.logger import logger
+from popgen.utils import get_iso_dir
+from popgen.isochroneBaseLite import Isochrone
+from popgen.parsec import Marigo2017 as Padova
+from popgen.parsec import defaults_27
+from popgen.logger import logger
 
 class Girardi2002(Padova):
     defaults = dict(defaults_27)

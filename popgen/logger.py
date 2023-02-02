@@ -6,7 +6,7 @@ Updated for python 3 from ugali.utils.logger
 """
 
 import os.path
-import popgen.logging
+import logging
 
 class SpecialFormatter(logging.Formatter):
     """
